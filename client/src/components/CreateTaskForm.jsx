@@ -69,7 +69,9 @@ const CreateTaskForm = ({ showAlert, tasks, setTasks }) => {
       if (response.status === "success") {
         showAlert(response.status, response.message);
         setNewTask({ title: "", description: "", due_date: "" });
-        setTasks([...tasks, { ...newTask, status: "Pending" }]);
+        console.log(response);
+        console.log("response.id", response.id);
+        setTasks([...tasks, { ...newTask, status: "Pending", id: response.id }]);
       } else {
         showAlert(response.status, response.message);
       }

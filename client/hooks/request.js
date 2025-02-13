@@ -6,7 +6,7 @@ const sendTaskToServer = async (newTask) => {
     const response = await axios.post(baseUrl, newTask);
 
     if (response.status === 201) {
-      return { status: "success", message: response.data.message };
+      return { status: "success", message: response.data.message, id: response.data.id };
     } else {
       return { status: "error", message: response.data.message };
     }

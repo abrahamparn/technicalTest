@@ -110,7 +110,6 @@ const TaskList = ({ fetchAllTasks, showAlert, tasks, setTasks, editingTask, setE
         if (response.status === 200) {
           showAlert("success", response.data.message);
           setEditFormData({ title: "", description: "", due_date: "" });
-          setTasks([...tasks, { ...editFormData, status: "Pending" }]);
           fetchAllTasks();
           setEditingTask(null);
         } else {
@@ -198,8 +197,8 @@ const TaskList = ({ fetchAllTasks, showAlert, tasks, setTasks, editingTask, setE
               </tr>
             </thead>
             <tbody>
-              {paginatedTasks.map((task, id) => (
-                <tr key={id}>
+              {paginatedTasks.map((task) => (
+                <tr key={task.id}>
                   <td>{task.title}</td>
                   <td>{task.description}</td>
                   <td>
