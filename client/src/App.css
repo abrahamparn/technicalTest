@@ -1,0 +1,19 @@
+.edit-card {
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  width: 50%;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+}
+
+/* For smaller screens (viewport less than 576px in Bootstrap terms) */
+@media (max-width: 575.98px) {
+  .edit-card {
+    width: 90%;
+    left: 5%;
+    top: 10%;
+  }
+}
