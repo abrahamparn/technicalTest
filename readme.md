@@ -77,14 +77,15 @@ CREATE DATABASE IF NOT EXISTS technical_test_pointstar;
 USE technical_test_pointstar;
 
 -- 3. Create the 'tasks' table
-CREATE TABLE IF NOT EXISTS tasks (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  title VARCHAR(255) NOT NULL,
-  description TEXT NOT NULL,
-  due_date DATE NOT NULL,
-  status ENUM('Pending', 'Completed') NOT NULL DEFAULT 'Pending',
-  isDeleted BOOL NOT NULL DEFAULT false
-);
+CREATE TABLE `tasks` (
+   `id` int NOT NULL AUTO_INCREMENT,
+   `title` varchar(255) NOT NULL,
+   `description` text NOT NULL,
+   `due_date` date NOT NULL,
+   `status` enum('Pending','Completed') NOT NULL DEFAULT 'Pending',
+   `isDeleted` tinyint(1) DEFAULT NULL,
+   PRIMARY KEY (`id`)
+ ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
 
 ### Database Configuration
