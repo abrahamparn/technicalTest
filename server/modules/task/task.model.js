@@ -22,7 +22,6 @@ async function createTask({ title, description, due_date }) {
   }
 }
 
-//! Pagination is missing
 async function getAllTasks() {
   const connection = await pool.getConnection();
   try {

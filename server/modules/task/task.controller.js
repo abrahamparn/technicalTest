@@ -19,7 +19,6 @@ const createTask = async (req, res, next) => {
   }
 };
 
-//! Needs to implement pagination
 const getAllTasks = async (req, res, next) => {
   try {
     const tasks = await taskModel.getAllTasks();
