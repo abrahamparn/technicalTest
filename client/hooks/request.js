@@ -1,5 +1,8 @@
-const baseUrl = "http://localhost:3000/api/tasks";
 import axios from "axios";
+
+const devBaseUrl = "http://localhost:3000/api/tasks";
+const prodBaseUrl = "/api/tasks";
+const baseUrl = process.env.NODE_ENV === "development" ? devBaseUrl : prodBaseUrl;
 
 const sendTaskToServer = async (newTask) => {
   try {

@@ -9,11 +9,7 @@
     "install-both": "npm run install-server && npm run install-client",
     "server": "npm run watch --prefix server",
     "client": "npm run start --prefix client",
-    "both": "cd client && npm run start && cd .. && cd server && server run watch",
-    "watch": "concurrently \"npm run server\"  \"npm run client\"",
-    "test": "npm  test --prefix server && npm test --prefix client",
-    "deploy": "npm run buildWindows --prefix client && npm start --prefix server",
-    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server"
+    "deploy": "npm run build --prefix client && npm start --prefix server"
   },
   "author": "abraham naiborhu",
   "license": "ISC",
