@@ -12,7 +12,7 @@ describe("ErrorHandler Middleware", () => {
     jest.clearAllMocks();
   });
 
-  test("should log error and return 500 status in development mode", () => {
+  test("should return 500 status in development mode", () => {
     process.env.NODE_ENV = "development";
 
     const error = new Error("Test error");
@@ -25,7 +25,7 @@ describe("ErrorHandler Middleware", () => {
     });
   });
 
-  test("should log error and return 500 status in production mode", () => {
+  test("should return 500 status in production mode", () => {
     process.env.NODE_ENV = "production";
 
     const error = new Error("Test error");
