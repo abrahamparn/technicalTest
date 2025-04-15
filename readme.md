@@ -83,7 +83,7 @@ Make sure you have mysql installed in your device.
 
 ### Database Schema
 
-```
+```sql
 -- 1. Create database
 CREATE DATABASE IF NOT EXISTS technical_test_pointstar;
 
@@ -108,7 +108,7 @@ Ensure you create a .env file inside the server/ folder and update the credentia
 
 #### .env File Example
 
-```
+```env
 PORT=3000
 NODE_ENV=production
 
@@ -141,12 +141,12 @@ MYSQL_DATABASE=technical_test_pointstar
 ### How to Run Backend
 
 - Install Dependencies
-  ```
+  ```cmd
   cd server
   npm install
   ```
 - Run Server Locally
-  ```
+  ```cmd
   npm run dev
   ```
   - The backend runs on port 3000 (http://localhost:3000).
@@ -218,14 +218,14 @@ Within this project i have three tests
 
 #### Install Depedencies
 
-```
+```bash
 cd client
 npm install
 ```
 
 #### Run Frontend in Development Mode
 
-```
+```bash
 npm run dev
 ```
 
@@ -241,13 +241,13 @@ To hasten the production I have <b>set a package.json</b> in root folder (techni
 
 1. install everything
 
-   ```
+   ```bash
    npm install
    npm run install-both
    ```
 
 2. deploy project
-   ```
+   ```bash
    npm run deploy
    ```
 3. Access Your Application
