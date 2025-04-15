@@ -1,4 +1,10 @@
-# Technical Test - Task Management System
+# ✅ Task Management System
+
+A fullstack web application for managing tasks efficiently. Built with **React (Vite)** on the frontend, **Node.js + Express** on the backend, and **MySQL** as the relational database. It features CRUD operations, filtering, sorting, and production-ready deployment.
+
+> 💼 Originally developed for a technical assessment, this project now stands as a modular, scalable, and testable productivity application.
+
+---
 
 ## Table of Contents
 
@@ -32,6 +38,14 @@
    - [Filtering Completed or Pending Tasks](#completed-or-pending)
 
 ## Overview
+
+This Task Management System allows users to:
+
+- Create, edit, and delete tasks
+- Assign due dates and track completion status
+- Filter between completed/pending tasks
+- Sort tasks by title or date
+- Deploy the full system locally or to production
 
 ### Quick Start
 
